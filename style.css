@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #a8a9ac;
+}
+nav{
+    display: flex;
+    width: 80%; 
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color:transparent;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(89, 0, 255);
+}
+ nav li i {
+    height: 100px;
+    margin-left: 500px;
+ }
+.detail{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.detail h1{
+    font-size: 50px;
+    color: rgb(49, 43, 43);
+    margin-bottom: 20px;
+}
+span{
+    color: darkblue;
+}
+.detail p{
+    color: #555;
+    line-height: 22px;
+}
+.detail a{
+    color:#f3e8e8;
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.photo{
+     width: 30%;
+     height:80%;
+     position: absolute;
+     bottom: 70px;
+     right: 100px;
+     object-fit: cover;
+}
+.photo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+/* responsive  */
+@media (max-width: 768px) {
+      .photo {
+        width: 200px;
+        height: 200px;
+    }
+}
+.active{
+    background-color: black;
+    color: white;
+}
+.footer{
+    background-color: #8d8b8b;
+}
+/* about page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav ul li a:hover {
+    color: #1259f3;
+}
+section#about {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+.about-info {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+.about-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.about-info p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-info h1 {
+        font-size: 2rem;
+    }
+
+    .about-info p {
+        font-size: 1rem;
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* contact */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.contact-info {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+}
+
+.contact-info ul li i {
+    color: #f39c12;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #f39c12;
+}
+.footer{
+    margin-top: auto;
+}
